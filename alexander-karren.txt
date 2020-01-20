@@ -1,0 +1,103 @@
+https://codepen.io/AlexanderKarren/pen/VwYBWVr?editors=1100
+
+1. What is Semantic HTML? 
+    Semantic HTML are tags that are used to outline the functions of HTML sections for accessibility reasons
+2. What is HTML used for?
+    HTML is used to create documents to be shared on the web.
+3. What is an attribute and where do we put it? 
+    An attribute is a specification for an HTML element that changes the way that it works. <element attribute="">
+4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used for the main title of a single page, and should only be used once.
+5. Name two tags that have required attributes
+    <a> and <input>
+6. What do we put in the head of our HTML document?
+    Style sheets, code sheets
+7. What is an id?
+    An ID is an attribute you can attach to an element to either link it to a style sheet, or use it as a way to jump around the page using anchor tags.
+8. What elements can I add an id to?
+    Any elements within the body that will have visible content to the user
+9. How many times can I use the same id on a page?
+    None, IDs should only be used once.
+10. What is a class?
+    A class is an attribute, like an ID, used to link to a stylesheet, but can be used multiple times.
+11. What elements can I add a class to?
+    Any elements within the body.
+12. How many times can I use the same class on a page?
+    As many times as you'd like.
+13. How do I get my link to open in a new tab?
+    Add "_blank" to the end of the link within the anchor tag's "href" attribute.
+14. What is the alt attribute used for?
+    Provides a phrase to appear in case the image or element doesn't load.
+15. How do I reference an id?
+    In an anchor tag or stylesheet, use the pound symbol # to reference an ID.
+16. What is the difference between a section and a div
+    Divs and sections both provide a container to put more elements in, but sections are a part of semantic HTML.
+17. What is CSS used for?
+    CSS is used for adding a style to a basic HTML document.
+18. How to we select an element? Example - every h2 on the page
+    h2 { }
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    An ID should be used to access parts of a page quickly using an anchor tag. Classes should be referenced by stylesheets in order to style more than one element of the same class at once.
+20. How do we select classes in CSS?
+    [element].[classname] { }
+21. How do we select a p element with a single class of “human””?
+    p.human { }
+22. What is a parent child selector? When would this be useful?
+    A parent child selector [parent] [child] { }; selects an element, and then its children to be formatted. This is good if you only want to edit elements within a certain container.
+23. How do you select all links within a div with the class of sidebar?
+    div.sidebar a { }
+24. What is a pseudo selector?
+    A pseudo selector changes the style of an element if user circumstances are met, like if they are hovering over the element or clicking on it.
+25. What do we use the change the spacing between lines?
+    line-height:_;
+26. What do we use to change the spacing between letters?
+    letter-spacing:_;
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform:uppercase,lowercase,capitalize;
+28. How do I add a 1px border around my div that is dotted and black?
+    border-width:1px;
+    border-style:dotted;
+    border-color:black;
+29. How do I select everything on the page?
+    * or body
+30. How do I write a comment in CSS?
+    // here's a comment
+    /* here's a different kind of comment */
+31. How do I find out what file I am in, when I am using the command line?
+    pwd pulls up the current directory
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+33. How do I remove a file via the command line? Why do I have to be careful with this?
+    rm (filename within current directory). This perma deletes files instead of moving them to the trash.
+34. Why should I use version control?
+    Keeping track of changes helps you and your group during debugging.
+35. How often should I commit to github?
+    Frequently.
+36. What is the command we would use to push our repo up to github? 
+    git push -u origin branch-name
+37. Walk me through Lambda's git flow.
+    1. Fork assignment so that it's yours
+    2. Add TL as collaborator
+    3. Copy the clone link on github
+    4. Navigate to desired directory on the command line
+    5. type "git clone (paste link)"
+    6. Navigate into created folder
+    7. Type "git checkout -b 'firstname-lastname'" to create your own branch for the assignment
+    8. Type in code . to start doing the assignment in Visual Studio code
+    9. Once a certain amount of changes have been made, type "git add ." to add the project to a repo and then commit the changes by typing "git commit -m "changelog message"
+    10. Once the project is completed, push the assignment back onto github by adding and committing all your changes again, then typing "git push -u origin branch-name"
+    11. Navigate to your branch of the project on github
+    12. Click the base repository button and select your forked repo
+    13. Add TL to reviewers and submit the pull request
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+    A block element will take up the width of the screen, so the next element will appear on a new line. Inline elements are stored side by side.
+2. What happens when an element is positioned absolutely?
+    Absolute positioning ignores other elements within the same container.
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Tables, paragraphs and headings are all block by default. Spans and textareas are inline by default. Images are inline block by default.
+5. In your own words, explain the box model. What is the fix for the box model? 
